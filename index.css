@@ -110,22 +110,17 @@ body{
     text-align: center;
     background-color: aquamarine;
 }
-.plants-header{
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.plants-head{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 50%;
 }
+
 .plants-title{
     font-size: 50px;
     font-weight: 700;
-    
+   
 }
-.plant-image{
-    width: 100%;
-}
-
 
 .plant-name{
     font-size: 1.5rem;
@@ -145,8 +140,64 @@ body{
     gap: 20px;
 }
 
+/* Flower Store design */
+.flowers-store{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 210px;
 
-
+}
+.store-details{
+    width: 100%;
+    padding: 30px;
+}
+.store-name{
+    font-size: 3.2rem;
+    font-weight: 700;
+    
+}
+/*  Latest Deal Style */
+.latest-deal{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 133px;
+    
+}
+.deal-title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+/* Colorful design */
+.colourful-branch{
+    max-width: 1440px;
+    height: 500px;
+    /* background-color: antiquewhite; */
+    background-image: url(assets/news-letter-bg.png);
+    align-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.color-head{
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; 
+}
+.colorful-title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.colorful-title input{
+    width:100%;
+}
 
 /* Responsive design with media query */
 @media screen and (max-width: 560px) {
@@ -164,7 +215,7 @@ body{
     }
     
     .plants-container{
-        grid-template-columns: repeat(2, 1fr);
+        
     }
     
 }
