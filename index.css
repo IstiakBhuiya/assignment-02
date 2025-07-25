@@ -22,34 +22,34 @@
 
 body{
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Navbar Style Layout */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-}
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem; 
-}
-.nav-link{
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.nav-item{
-    list-style: none;
-    
+.nav-links {
+  display: flex;
 }
-.navbar{
-    max-width: 1140px;
-    margin: 0 auto;
+
+.nav-item {
+  list-style: none;
+  margin-right: 50px;
 }
-.nav-list button{
-    background-color:white;
-    border: none;
+
+.cart {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.25em;
 }
 /* Shared color */
 .text-light-grey{
@@ -204,41 +204,61 @@ body{
 
 
 /* plant gallery */
-.plant-gallary{
+.latest-deal-images{
+    display: flex;
+    gap: 20px;
     max-width: 1140px;
     margin: 0 auto;
-    background-color: #8987A1;
-    display: grid;
-    grid-template-columns: repeat(2, 35%);
-    gap: 15px;
-    border-radius: 14px;
 }
-.plant-gallary img{
-    width: auto;
-    height: auto;
+.left-image{
+   width: 35%;
+    height: 420px;
+    
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
-
-
-.gallery-bloom{
-    background-image: url(assets/deal-bloom.png);
- }
-.gallery-ana{
-    background-image: url(assets/deal-ana.png);
-
+.small-images{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    
 }
-.gallery-zabo{
-    background-image: url(assets/deal-zabo.png);
-
+.small-images a{
+    color: #fff;
 }
-
-
-
+.right-image{
+   width: 65%;
+    height: 420px;
+    
+    display: flex;
+    
+}
+.large-image{
+    width: 100%;
+    height: 420px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.large-image a{
+    color: #fff;
+}
 
 /* Colorful design */
 .colourful-branch{
     max-width: 1440px;
     height: 500px;
     background-image: url(assets/news-letter-bg.png);
+    display: flex;
     align-content: center;
     text-align: center;
     margin-top: 120px;
@@ -301,7 +321,7 @@ body{
 }
 
 .footer-adress{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.50rem;
 
@@ -320,10 +340,14 @@ body{
 
 /* Responsive design with media query */
 @media screen and (max-width: 560px) {
-    .nav-list li{
-        display: none;
-    
-    }
+    .navbar .menu {
+    display: none;
+  }
+
+  .cart {
+    margin-top: 30px;
+    font-size: 1.25rem;
+  }
     .banner{
         flex-direction: column-reverse;
     
@@ -333,8 +357,8 @@ body{
         /* object-fit: cover; */
     }
     
-    .plants-container{
-        grid-template-columns: repeat(2, 2fr);
+    .plants-containe{
+        grid-template-columns: repeat(2, 1fr);
     }
     .badge{
         display: none;
@@ -342,8 +366,25 @@ body{
     .flowers-store{
         grid-template-columns: repeat(1, 1fr);
     }
+    .latest-deal-images{
+        flex-direction: column;
+    }
+    .left-image{
+        width: 100%;
+    }
+    .right-image{
+        width: 100%;
+    }
     .footer-container{
         width: 100%;
         flex-direction: column;
     }
+    .footer-adress{
+        grid-template-columns: repeat(1, 1fr);
+           
+}
+    .footer-icon a{
+       margin-right: 0px;
+}
+
 }

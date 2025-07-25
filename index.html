@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-02</title>
-    
+    <script src="https://kit.fontawesome.com/191580ad59.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="">
-        <nav class="navbar inter-uniquifier-normal ">
-            <img src="assets/logo.png" alt="">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link text-dark02" href="">Home</a></li>
-                <li class="nav-item  text-light-grey"><a class="nav-link text-light-grey" href="">Shop</a></li>
-                <li class="nav-item"><a class="nav-link text-light-grey" href="">About us</a></li>
-                <button class="banner-btn"><a class="nav-link text-dark01" href=""><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</i></a></button>
-                
-            </ul>
-        </nav>
+        <nav class="navbar">
+        <img class="nav-logo" src="assets/logo.png" alt="flower-shop-logo" />
+
+        <ul class="nav-links text-light-grey">
+          <li class="nav-item menu">
+            <a class="nav-link active dark-1" href="">Home</a>
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link dark-2" href="">Shop</a>
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link dark-2" href="">About Us</a>
+          </li>
+          <li class="nav-item cart">
+            <a href="" class="nav-link dark-1">
+              <i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+            >
+          </li>
+        </ul>
+      </nav>
         <section class="banner">
             <div class="banner-content ">
                 <h1 class="banner-title ">
@@ -120,25 +130,37 @@
             </div>
 
         </section>
+        <!-- Latest Deal start -->
         <section class="latest-deal">
             <h2 class="deal-title"><span class="text-orange">Latest</span>  Deals</h2>
             <p class="text-light-grey inter-uniquifier-normal">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
 
         </section>
-        <section class="plant-gallary">
-            <div class="gallery-bloom">
-                <h2 class="gallery-name">60% Off | Bloom Plant</h2>
-                <a href="">Shop Now</a>
+
+        <section class="latest-deal-images">
+            <div class="left-image">
+                <div class="small-images" style="background-image: url('../assets/deal-bloom.png'); background-repeat: no-repeat; background-size:cover;">
+                                       <h4>
+                        60% Off | Bloom Plant
+                    </h4>
+                    <a href="">Shop Now</a>
+                </div>
+                <div class="small-images" style="background-image: url('../assets/deal-ana.png');background-repeat: no-repeat; background-size:cover;">
+                     <h4>
+                        60% Off | Ana Plant
+                    </h4>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+            <div class="right-image">
+                <div class="large-image" style="background-image: url('../assets/deal-zabo.png');background-repeat: no-repeat; background-size:cover;">
+                     <h4>
+                    60% Off | Zabo Plant
+                </h4>
+                    <a href="">Shop Now</a>
+                </div>
             </div>
             
-            <div class="gallery-zabo">
-                 <h2 class="gallery-name">25% Off | Zabo Plant</h2>
-                <a href="">Shop Now</a>
-            </div>
-            <div class="gallery-ana">
-                 <h2 class="gallery-name">30% Off | Ana  Plant</h2>
-                <a href="">Shop Now</a>
-            </div>
 
         </section>
         
