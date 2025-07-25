@@ -1,0 +1,170 @@
+/* Font Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-uniquifier-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-uniquifier-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body{
+    max-width: 1440px;
+}
+
+/* Navbar Style Layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem; 
+}
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-item{
+    list-style: none;
+    
+}
+.navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+/* Shared color */
+.text-light-grey{
+    color: #8987A1;
+}
+.text-dark01{
+    color: #000000;  
+}
+.text-dark02{
+    color: rgba(37, 36, 50, 1);
+    
+}
+.text-orange{
+    color: #E95A08;
+}
+
+.btn-primary{
+    background-color: #E95A08;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 19px 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+/* Banner Styles */
+.banner{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    background-color: antiquewhite;
+    padding-top: 130px;
+}
+.banner-image{
+    width: 50%;
+    
+    object-fit: cover;
+    
+}
+.banner-content{
+    width: 50%;
+    padding: 20px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+    padding-bottom: 0;
+}
+
+/* plants related style */
+.Our-Plants{
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    background-color: aquamarine;
+}
+.plants-header{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.plants-title{
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+.plant-image{
+    width: 100%;
+}
+
+
+.plant-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 0px;
+}
+.plant-price{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0px;
+    padding: 0px;
+}
+.plants-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+
+
+/* Responsive design with media query */
+@media screen and (max-width: 560px) {
+    .nav-list{
+        display: none;
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        
+    }
+    .banner-image{
+        width: auto;
+        object-fit: cover;
+    }
+    
+    .plants-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
